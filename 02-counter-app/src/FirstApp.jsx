@@ -16,6 +16,11 @@ export function FirstApp({ title, subtitle }) {
 }
 
 FirstApp.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
+
+FirstApp.defaultProps = {
+  title: "No hay titulo",
+  subtitle: "No hay subtitulo",
 };
