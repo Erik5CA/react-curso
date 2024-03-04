@@ -9,7 +9,7 @@ export function FirstApp({ title, subtitle }) {
 
   return (
     <>
-      <h1>{title}</h1>
+      <h1 data-testid="test-title">{title}</h1>
       <h2>{subtitle}</h2>
     </>
   );
@@ -17,7 +17,7 @@ export function FirstApp({ title, subtitle }) {
 
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
 };
 
 FirstApp.defaultProps = {
